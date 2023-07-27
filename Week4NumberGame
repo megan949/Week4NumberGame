@@ -1,0 +1,15 @@
+# Number Guessing Game
+import random
+print('Welcome to the Number Guessing Game!')  # Welcome to Number Game
+number = random.randint(0, 9)  # number is random from 0 to 9
+guess = int(input('Guess a number between 0 and 9: '))  # User inputs their guess
+
+while guess != number:
+    if guess < number:
+        print('Try Again')  # Guess doesn't equal number try again
+        guess = int(input('Guess a number between 0 and 9: '))
+    else:
+        print('Try Again')  # Same as previous
+        guess = int(input('Guess a number between 0 and 9: '))
+
+print('Congrats! You got it!')  # Congrats and ends game if chosen correctly
